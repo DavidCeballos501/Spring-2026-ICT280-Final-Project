@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech Solutions | Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <h1>Products and Services</h1>
+        <p>Search GreenTech offerings</p>
+    </div>
+    
+<nav aria-label="Main navigation">
+    <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="mainMenu">Menu</button>
+    <ul id="mainMenu" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products/Services</a></li>
+        <li><a href="blog.html">Blog/Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+</header>
+
+<main>
+    <section>
+        <h2>Product Catalog</h2>
+        <p>Use the search box or filter buttons to find a product or service.</p>
+
+        <label for="productSearch">Search products:</label>
+        <input type="text" id="productSearch" placeholder="Example: carbon">
+
+        <div class="filter-buttons" aria-label="Product filters">
+            <button class="filterButton" data-filter="all">All</button>
+            <button class="filterButton" data-filter="energy">Energy</button>
+            <button class="filterButton" data-filter="recycling">Recycling</button>
+            <button class="filterButton" data-filter="software">Software</button>
+        </div>
+    </section>
+
+    <section id="productList" class="card-row">
+        <article class="card product" data-category="energy">
+            <img src="images/solar.svg" alt="Energy monitor device">
+            <h3>Energy Smart Monitor</h3>
+            <p>Tracks office energy use and helps identify wasted electricity.</p>
+        </article>
+        <article class="card product" data-category="recycling">
+            <img src="images/recycle.svg" alt="Smart recycling bin">
+            <h3>Smart Recycling Bin</h3>
+            <p>Uses simple sensors to help sort recycling and reduce trash mistakes.</p>
+        </article>
+        <article class="card product" data-category="software">
+            <img src="images/carbon.svg" alt="Carbon tracking software screen">
+            <h3>Carbon Track Dashboard</h3>
+            <p>Helps businesses record emissions data and see monthly progress.</p>
+        </article>
+        <article class="card product" data-category="energy">
+            <img src="images/solar.svg" alt="Office power saving kit">
+            <h3>Office Power Saving Kit</h3>
+            <p>Includes timers, smart plugs, and basic reports for small offices.</p>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 GreenTech Solutions. Student final project for ICT 280.</p>
+    <address>
+        245 Greenway Drive, Las Cruces, NM 88001<br>
+        <a href="mailto:info@greentechsolutions.example">info@greentechsolutions.example</a>
+    </address>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+

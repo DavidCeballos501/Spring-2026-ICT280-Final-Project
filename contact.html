@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenTech Solutions | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <h1>Contact GreenTech</h1>
+        <p>Questions about sustainable technology</p>
+    </div>
+    
+<nav aria-label="Main navigation">
+    <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="mainMenu">Menu</button>
+    <ul id="mainMenu" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products/Services</a></li>
+        <li><a href="blog.html">Blog/Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+</header>
+
+<main>
+    <section class="two-column">
+        <div>
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:info@greentechsolutions.example">info@greentechsolutions.example</a></p>
+            <p>Phone: <a href="tel:5755550187">(575) 555-0187</a></p>
+            <address>
+                245 Greenway Drive<br>
+                Las Cruces, NM 88001
+            </address>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+            <h2>Contact Form</h2>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="interest">Area of Interest</label>
+            <select id="interest">
+                <option value="Energy devices">Energy devices</option>
+                <option value="Recycling systems">Recycling systems</option>
+                <option value="Carbon tracking">Carbon tracking</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <p id="formMessage" class="message" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 GreenTech Solutions. Student final project for ICT 280.</p>
+    <address>
+        245 Greenway Drive, Las Cruces, NM 88001<br>
+        <a href="mailto:info@greentechsolutions.example">info@greentechsolutions.example</a>
+    </address>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,300 @@
+/* GreenTech Solutions Final Project
+   Beginner level external CSS stylesheet
+*/
+
+/* Basic page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2f25;
+    background-color: #f4f7f1;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #0b5c2c;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #f5c542;
+    outline-offset: 2px;
+}
+
+/* Header and navigation */
+header {
+    background-color: #174d2a;
+    color: white;
+    padding: 20px;
+}
+
+.top-bar {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 15px auto 0 auto;
+}
+
+.menu-button {
+    display: none;
+    background-color: white;
+    color: #174d2a;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    background-color: #216b3d;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.nav-list a:hover {
+    background-color: #2e8b57;
+}
+
+/* Main layout */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #d8e2d3;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero div {
+    flex: 2;
+}
+
+.hero img {
+    flex: 1;
+    min-width: 220px;
+}
+
+.button-link,
+button {
+    background-color: #174d2a;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+button:hover,
+.button-link:hover {
+    background-color: #2e8b57;
+}
+
+/* Cards and columns */
+.card-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 220px;
+    border: 1px solid #cddbc7;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fbfdf9;
+}
+
+.card img {
+    height: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+.two-column {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.two-column > div,
+.two-column > form,
+.two-column > img {
+    flex: 1;
+}
+
+.callout {
+    border-left: 8px solid #2e8b57;
+}
+
+/* Tables and forms */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+th,
+td {
+    border: 1px solid #8fa58b;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e4efe0;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8fa58b;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.filter-buttons {
+    margin-top: 15px;
+}
+
+.filter-buttons button {
+    margin: 4px;
+}
+
+.message {
+    font-weight: bold;
+    color: #174d2a;
+}
+
+.extra-text {
+    display: none;
+    background-color: #eaf4e6;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #12351f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* High contrast accessibility class changed by JavaScript */
+.high-contrast {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.high-contrast section,
+.high-contrast .card {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.high-contrast a {
+    color: #ffff66;
+}
+
+.high-contrast header,
+.high-contrast footer,
+.high-contrast button,
+.high-contrast .button-link {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 700px) {
+    .menu-button {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .hero,
+    .two-column {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
