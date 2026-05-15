@@ -37,4 +37,8 @@ https://DavidCeballos501.github.io/Spring-2026-ICT280-Final-Project/
 # Technologies Used
 - HTML
 - CSS
+<<<<<<< HEAD
 - JavaScript
+=======
+- JavaScript
+>>>>>>> 85997696282ce29005159405af297af7831f1f24
