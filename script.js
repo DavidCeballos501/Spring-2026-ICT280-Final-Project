@@ -1,5 +1,5 @@
 // GreenTech Solutions Final Project JavaScript
-// This file adds simple beginner-level interactivity.
+// This file adds simple interactivity.
 
 // Mobile menu button
 let menuButton = document.getElementById("menuButton");
